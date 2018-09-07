@@ -1,0 +1,253 @@
+httperf --timeout=5 --client=0/1 --server=bbbkvm.uvanet.br --port=80 --uri=/index.html --rate=200 --send-buffer=4096 --recv-buffer=16384 --num-conns=5000 --num-calls=10
+Maximum connect burst length: 1
+
+Total: connections 5000 requests 50000 replies 50000 test-duration 25.001 s
+
+Connection rate: 200.0 conn/s (5.0 ms/conn, <=3 concurrent connections)
+Connection time [ms]: min 3.3 avg 4.9 max 14.1 median 4.5 stddev 0.6
+Connection time [ms]: connect 0.2
+Connection length [replies/conn]: 10.000
+
+Request rate: 1999.9 req/s (0.5 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 1999.5 avg 1999.9 max 2000.3 stddev 0.3 (5 samples)
+Reply time [ms]: response 0.2 transfer 0.3
+Reply size [B]: header 284.0 content 6134.0 footer 0.0 (total 6418.0)
+Reply status: 1xx=0 2xx=50000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 5.28 system 19.71 (user 21.1% system 78.8% total 100.0%)
+Net I/O: 12689.0 KB/s (103.9*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --timeout=5 --client=0/1 --server=bbbkvm.uvanet.br --port=80 --uri=/index.html --rate=400 --send-buffer=4096 --recv-buffer=16384 --num-conns=5000 --num-calls=20
+Maximum connect burst length: 1
+
+Total: connections 5000 requests 100000 replies 100000 test-duration 12.506 s
+
+Connection rate: 399.8 conn/s (2.5 ms/conn, <=7 concurrent connections)
+Connection time [ms]: min 6.6 avg 8.1 max 15.6 median 8.5 stddev 0.6
+Connection time [ms]: connect 0.2
+Connection length [replies/conn]: 20.000
+
+Request rate: 7996.4 req/s (0.1 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 7994.3 avg 7995.3 max 7996.4 stddev 1.5 (2 samples)
+Reply time [ms]: response 0.3 transfer 0.1
+Reply size [B]: header 284.0 content 6134.0 footer 0.0 (total 6418.0)
+Reply status: 1xx=0 2xx=100000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 1.40 system 11.10 (user 11.2% system 88.8% total 100.0%)
+Net I/O: 50735.1 KB/s (415.6*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --timeout=5 --client=0/1 --server=bbbkvm.uvanet.br --port=80 --uri=/index.html --rate=600 --send-buffer=4096 --recv-buffer=16384 --num-conns=5000 --num-calls=30
+Maximum connect burst length: 2
+
+Total: connections 4892 requests 135074 replies 135060 test-duration 11.339 s
+
+Connection rate: 431.4 conn/s (2.3 ms/conn, <=1022 concurrent connections)
+Connection time [ms]: min 15.6 avg 1134.5 max 6497.8 median 390.5 stddev 1318.6
+Connection time [ms]: connect 790.6
+Connection length [replies/conn]: 30.000
+
+Request rate: 11912.1 req/s (0.1 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 11838.1 avg 12649.8 max 13461.5 stddev 1148.0 (2 samples)
+Reply time [ms]: response 11.4 transfer 0.1
+Reply size [B]: header 284.0 content 6134.0 footer 0.0 (total 6418.0)
+Reply status: 1xx=0 2xx=135060 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 0.65 system 10.68 (user 5.7% system 94.2% total 99.9%)
+Net I/O: 75571.2 KB/s (619.1*10^6 bps)
+
+Errors: total 498 client-timo 390 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 108 addrunavail 0 ftab-full 0 other 0
+httperf --timeout=5 --client=0/1 --server=bbbkvm.uvanet.br --port=80 --uri=/index.html --rate=500 --send-buffer=4096 --recv-buffer=16384 --num-conns=5000 --num-calls=20
+Maximum connect burst length: 1
+
+Total: connections 5000 requests 100000 replies 100000 test-duration 10.007 s
+
+Connection rate: 499.6 conn/s (2.0 ms/conn, <=24 concurrent connections)
+Connection time [ms]: min 7.5 avg 11.1 max 53.9 median 9.5 stddev 5.5
+Connection time [ms]: connect 0.2
+Connection length [replies/conn]: 20.000
+
+Request rate: 9992.7 req/s (0.1 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 9988.8 avg 9994.5 max 10000.1 stddev 8.0 (2 samples)
+Reply time [ms]: response 0.5 transfer 0.1
+Reply size [B]: header 284.0 content 6134.0 footer 0.0 (total 6418.0)
+Reply status: 1xx=0 2xx=100000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 1.36 system 8.64 (user 13.6% system 86.3% total 99.9%)
+Net I/O: 63400.7 KB/s (519.4*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --timeout=5 --client=0/1 --server=bbbkvm.uvanet.br --port=80 --uri=/index.html --rate=500 --send-buffer=4096 --recv-buffer=16384 --num-conns=20000 --num-calls=20
+Maximum connect burst length: 1
+
+Total: connections 20000 requests 387354 replies 387320 test-duration 40.080 s
+
+Connection rate: 499.0 conn/s (2.0 ms/conn, <=725 concurrent connections)
+Connection time [ms]: min 9.3 avg 372.8 max 6475.4 median 269.5 stddev 664.8
+Connection time [ms]: connect 126.2
+Connection length [replies/conn]: 20.000
+
+Request rate: 9664.4 req/s (0.1 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 8280.7 avg 9662.6 max 10756.0 stddev 769.6 (8 samples)
+Reply time [ms]: response 12.3 transfer 0.1
+Reply size [B]: header 284.0 content 6134.0 footer 0.0 (total 6418.0)
+Reply status: 1xx=0 2xx=387320 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 2.50 system 37.57 (user 6.2% system 93.7% total 100.0%)
+Net I/O: 61312.8 KB/s (502.3*10^6 bps)
+
+Errors: total 634 client-timo 634 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --timeout=5 --client=0/1 --server=bbbkvm.uvanet.br --port=80 --uri=/index.html --rate=500 --send-buffer=4096 --recv-buffer=16384 --num-conns=5000 --num-calls=20
+Maximum connect burst length: 1
+
+Total: connections 5000 requests 100000 replies 100000 test-duration 10.007 s
+
+Connection rate: 499.6 conn/s (2.0 ms/conn, <=12 concurrent connections)
+Connection time [ms]: min 7.5 avg 10.6 max 55.0 median 9.5 stddev 2.2
+Connection time [ms]: connect 0.2
+Connection length [replies/conn]: 20.000
+
+Request rate: 9992.7 req/s (0.1 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 9988.6 avg 9994.0 max 9999.5 stddev 7.8 (2 samples)
+Reply time [ms]: response 0.4 transfer 0.1
+Reply size [B]: header 284.0 content 6134.0 footer 0.0 (total 6418.0)
+Reply status: 1xx=0 2xx=100000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 1.25 system 8.76 (user 12.5% system 87.5% total 100.0%)
+Net I/O: 63401.1 KB/s (519.4*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --timeout=5 --client=0/1 --server=bbbkvm.uvanet.br --port=80 --uri=/index.html --rate=500 --send-buffer=4096 --recv-buffer=16384 --num-conns=10000 --num-calls=20
+Maximum connect burst length: 1
+
+Total: connections 10000 requests 199100 replies 199100 test-duration 22.982 s
+
+Connection rate: 435.1 conn/s (2.3 ms/conn, <=323 concurrent connections)
+Connection time [ms]: min 8.8 avg 372.6 max 4754.9 median 293.5 stddev 574.9
+Connection time [ms]: connect 112.9
+Connection length [replies/conn]: 20.000
+
+Request rate: 8663.3 req/s (0.1 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 9574.1 avg 9675.5 max 9728.5 stddev 69.6 (4 samples)
+Reply time [ms]: response 12.9 transfer 0.1
+Reply size [B]: header 284.0 content 6134.0 footer 0.0 (total 6418.0)
+Reply status: 1xx=0 2xx=199100 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 1.39 system 21.59 (user 6.0% system 93.9% total 100.0%)
+Net I/O: 54966.5 KB/s (450.3*10^6 bps)
+
+Errors: total 45 client-timo 45 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --timeout=5 --client=0/1 --server=bbbkvm.uvanet.br --port=80 --uri=/index.html --rate=500 --send-buffer=4096 --recv-buffer=16384 --num-conns=10000 --num-calls=20
+Maximum connect burst length: 1
+
+Total: connections 10000 requests 200000 replies 200000 test-duration 20.009 s
+
+Connection rate: 499.8 conn/s (2.0 ms/conn, <=49 concurrent connections)
+Connection time [ms]: min 7.6 avg 15.2 max 113.0 median 10.5 stddev 13.9
+Connection time [ms]: connect 0.2
+Connection length [replies/conn]: 20.000
+
+Request rate: 9995.6 req/s (0.1 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 9987.9 avg 9996.1 max 10002.1 stddev 6.7 (4 samples)
+Reply time [ms]: response 0.7 transfer 0.1
+Reply size [B]: header 284.0 content 6134.0 footer 0.0 (total 6418.0)
+Reply status: 1xx=0 2xx=200000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 2.60 system 17.41 (user 13.0% system 87.0% total 100.0%)
+Net I/O: 63419.3 KB/s (519.5*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --timeout=5 --client=0/1 --server=bbbkvm.uvanet.br --port=80 --uri=/index.html --rate=500 --send-buffer=4096 --recv-buffer=16384 --num-conns=10000 --num-calls=20
+Maximum connect burst length: 1
+
+Total: connections 10000 requests 200000 replies 200000 test-duration 20.009 s
+
+Connection rate: 499.8 conn/s (2.0 ms/conn, <=29 concurrent connections)
+Connection time [ms]: min 7.5 avg 11.4 max 62.1 median 9.5 stddev 5.7
+Connection time [ms]: connect 0.2
+Connection length [replies/conn]: 20.000
+
+Request rate: 9995.7 req/s (0.1 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 9980.1 avg 9996.9 max 10008.9 stddev 12.2 (4 samples)
+Reply time [ms]: response 0.5 transfer 0.1
+Reply size [B]: header 284.0 content 6134.0 footer 0.0 (total 6418.0)
+Reply status: 1xx=0 2xx=200000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 2.50 system 17.50 (user 12.5% system 87.5% total 100.0%)
+Net I/O: 63419.8 KB/s (519.5*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --timeout=5 --client=0/1 --server=bbbkvm.uvanet.br --port=80 --uri=/index.html --rate=500 --send-buffer=4096 --recv-buffer=16384 --num-conns=10000 --num-calls=20
+Maximum connect burst length: 1
+
+Total: connections 10000 requests 200000 replies 200000 test-duration 20.053 s
+
+Connection rate: 498.7 conn/s (2.0 ms/conn, <=70 concurrent connections)
+Connection time [ms]: min 9.1 avg 34.6 max 308.4 median 26.5 stddev 22.9
+Connection time [ms]: connect 0.6
+Connection length [replies/conn]: 20.000
+
+Request rate: 9973.3 req/s (0.1 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 9927.5 avg 9974.5 max 9997.5 stddev 32.9 (4 samples)
+Reply time [ms]: response 1.6 transfer 0.1
+Reply size [B]: header 284.0 content 6134.0 footer 0.0 (total 6418.0)
+Reply status: 1xx=0 2xx=200000 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 1.95 system 18.09 (user 9.7% system 90.2% total 99.9%)
+Net I/O: 63278.2 KB/s (518.4*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+httperf --timeout=5 --client=0/1 --server=bbbkvm.uvanet.br --port=80 --uri=/index.html --rate=500 --send-buffer=4096 --recv-buffer=16384 --num-conns=20000 --num-calls=20
+Maximum connect burst length: 6
+
+Total: connections 19379 requests 353441 replies 353440 test-duration 44.018 s
+
+Connection rate: 440.2 conn/s (2.3 ms/conn, <=1022 concurrent connections)
+Connection time [ms]: min 7.2 avg 335.9 max 6223.5 median 118.5 stddev 784.2
+Connection time [ms]: connect 179.4
+Connection length [replies/conn]: 20.000
+
+Request rate: 8029.4 req/s (0.1 ms/req)
+Request size [B]: 79.0
+
+Reply rate [replies/s]: min 3602.9 avg 8593.5 max 9985.3 stddev 2400.2 (8 samples)
+Reply time [ms]: response 7.7 transfer 0.1
+Reply size [B]: header 284.0 content 6134.0 footer 0.0 (total 6418.0)
+Reply status: 1xx=0 2xx=353440 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 2.67 system 41.33 (user 6.1% system 93.9% total 100.0%)
+Net I/O: 50944.2 KB/s (417.3*10^6 bps)
+
+Errors: total 2328 client-timo 1432 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 621 addrunavail 0 ftab-full 0 other 275

@@ -1,0 +1,20 @@
+Source: httperf
+Section: web
+Priority: optional
+Maintainer: Alexander Reichle-Schmehl <tolimar@debian.org>
+Homepage: http://www.hpl.hp.com/research/linux/httperf/
+Build-Depends: debhelper (>= 5), quilt, libssl-dev, autotools-dev
+Standards-Version: 3.8.3
+Vcs-Svn: svn://svn.debian.org/collab-maint/deb-maint/httperf/trunk/
+Vcs-Browser: http://svn.debian.org/viewsvn/collab-maint/deb-maint/httperf/
+
+
+Package: httperf
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: An HTTP server performance tester
+ httperf is a tool to measure web server  performance. It speaks the HTTP
+ protocol both in its HTTP/1.0 and HTTP/1.1 flavors and offers a variety of
+ workload generators. While running, it keeps track of a number of performance
+ metrics that are summarized in the form  of  statistics  that  are printed  at
+ the end of a test run.

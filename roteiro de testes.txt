@@ -1,0 +1,25 @@
+30s: 1º cliente sysadm  conecta, inicia webcam, manda apresentação e inicia desktop sharing.
+
+2min: 2ª aba do primeiro cliente com câmera
+
+3min: 3ª aba câmera
+
+4min: 4ª aba câmera
+
+5min: 1ª aba monit câmera
+
+6min: 1ª aba monit câmera
+
+7min: 1ª aba monit câmera
+
+8min: 1ª aba monit câmera
+
+9min: 1ª aba 1º cliente aws sem câmera
+
+10min: 2ª aba 1º clienteaws sem câmera
+
+11min: 3ª aba 1º clienteaws sem câmera
+
+12min: 4ª aba 1º cliente aws sem câmera
+
+13min: 1ª aba 2º cliente aws sem câmera

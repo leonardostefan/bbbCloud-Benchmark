@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Mon, 18 Jan 2010 21:26:25 +0100
+Source: httperf
+Binary: httperf
+Architecture: amd64
+Version: 0.9.0-2
+Distribution: unstable
+Urgency: low
+Maintainer: Alexander Reichle-Schmehl <tolimar@debian.org>
+Changed-By: Alexander Reichle-Schmehl <tolimar@debian.org>
+Description: 
+ httperf    - An HTTP server performance tester
+Changes: 
+ httperf (0.9.0-2) unstable; urgency=low
+ .
+   * Changing Maintainer Name
+   * Adding Vcs-Headers to debian/control
+   * Improve debian/copyright
+   * Add ${misc:Depends} to depends
+   * Add debian/README.source
+   * Bump standards to 3.8.3 (no further changes needed)
+Checksums-Sha1: 
+ aeab6bc248009ba05c1f9a434b045484d56eebfa 71594 httperf_0.9.0-2_amd64.deb
+Checksums-Sha256: 
+ 76d4ef07b0df249997c03223992ee396d2d4b139d633dcc4dec975e0ffcfc5f3 71594 httperf_0.9.0-2_amd64.deb
+Files: 
+ e70afce41b16ff134613aa552b6400b0 71594 web optional httperf_0.9.0-2_amd64.deb

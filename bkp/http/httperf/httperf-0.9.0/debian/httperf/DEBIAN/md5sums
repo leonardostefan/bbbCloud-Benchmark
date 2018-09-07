@@ -1,0 +1,10 @@
+0ab5f084ae5dd1a14788598b8d1399a5  usr/bin/httperf
+cd6ae28f84828fea2a5c31bfb92278ea  usr/bin/idleconn
+2593ed1cd058f23ccdf0a5f617514f08  usr/share/doc/httperf/AUTHORS
+6fc8669ff8ebf791ec5914e4e165a42f  usr/share/doc/httperf/NEWS.gz
+7f9e1e42787c258515b8c152a4380449  usr/share/doc/httperf/README.gz
+0bbabd6648062bb5a3525016f0163069  usr/share/doc/httperf/TODO
+95bc400b062a892bab5bfecbd4fdfc49  usr/share/doc/httperf/changelog.Debian.gz
+cf7f2996bcf5a36ad9818bb191df9c86  usr/share/doc/httperf/changelog.gz
+aa008cd72c943e8b98569e0febf8719e  usr/share/doc/httperf/copyright
+c873bab0fdd7b593c352b9fe082c1b93  usr/share/man/man1/httperf.1.gz

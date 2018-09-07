@@ -1,0 +1,91 @@
+--- a/man/httperf.1
++++ b/man/httperf.1
+@@ -87,31 +87,31 @@ processes as possible both on the client
+ 
+ .SH EXAMPLES
+ .TP
+-httperf --hog --server www
++httperf \-\-hog \-\-server www
+ This command causes
+ .B httperf
+ to create a connection to host www, send a request for the root
+ document (http://www/), receive the reply, close the connection, and
+ then print some performance statistics.
+ .TP
+-httperf --hog --server www --num-conn 100 --ra 10 --timeout 5
++httperf \-\-hog \-\-server www \-\-num\-conn 100 \-\-ra 10 \-\-timeout 5
+ Like above, except that a total of 100 connections are created and
+ that connections are created at a fixed rate of 10 per second.  Note
+-that option ``--rate'' has been abbreviated to ``--ra''.
++that option ``\-\-rate'' has been abbreviated to ``\-\-ra''.
+ .TP
+-httperf --hog --server=www --wsess=10,5,2 --rate 1 --timeout 5
++httperf \-\-hog \-\-server=www \-\-wsess=10,5,2 \-\-rate 1 \-\-timeout 5
+ Causes
+ .B httperf
+ to generate a total of 10 sessions at a rate of 1 session per second.
+ Each session consists of 5 calls that are spaced out by 2 seconds.
+ .TP
+-httperf --hog --server=www --wsess=10,5,2 --rate=1 --timeout=5 --ssl
++httperf \-\-hog \-\-server=www \-\-wsess=10,5,2 \-\-rate=1 \-\-timeout=5 \-\-ssl
+ Like above, except that
+ .B httperf
+ contacts server www via SSL at port 443 (the default port for SSL
+ connections).
+ .TP
+-httperf --hog --server www --wsess=10,5,2 --rate=1 --timeout=5 --ssl --ssl-ciphers=EXP-RC4-MD5:EXP-RC2-CBC-MD5 --ssl-no-reuse --http-version=1.0
++httperf \-\-hog \-\-server www \-\-wsess=10,5,2 \-\-rate=1 \-\-timeout=5 \-\-ssl \-\-ssl\-ciphers=EXP\-RC4\-MD5:EXP\-RC2\-CBC\-MD5 \-\-ssl\-no\-reuse \-\-http\-version=1.0
+ Like above, except that
+ .B httperf
+ will inform the server that it can only select from two cipher suites
+@@ -145,7 +145,7 @@ Specifies to include string
+ as an additional request header.  It is necessary to specify the
+ terminating carriage-return/line-feed sequence explicitly.  This can
+ be done by using the escape sequence ``\\n''.  This makes it possible
+-to include multiple request headers.  For example, ``--add-header
++to include multiple request headers.  For example, ``\-\-add\-header
+ "Referer: foo\\nAuth: secret\\n"'' would add two request headers
+ (``Referer'' and ``Auth'') to each request.  Other supported escape
+ sequences are ``\\r'' (carriage-return), ``\\a'' (line-feed), ``\\\\''
+@@ -455,7 +455,7 @@ will include this cookie as well.  At pr
+ .B httperf
+ supports only one cookie per session.  If a second cookie is received,
+ the new cookie overwrites the existing one and a warning message is
+-printed if ``--debug 1'' is on.
++printed if ``\-\-debug 1'' is on.
+ .TP
+ .B --ssl
+ Specifies that all communication between
+@@ -929,7 +929,7 @@ be measured, so it shows up as zero.  Th
+ reply fits into a single TCP segment.
+ 
+ The next line, labeled ``Reply size'' contains statistics on the
+-average size of the replies---all numbers are in reported bytes.
++average size of the replies\-\-\-all numbers are in reported bytes.
+ Specifically, the line lists the average length of reply headers, the
+ content, and footers (HTTP/1.1 uses footers to realize the ``chunked''
+ transfer encoding).  For convenience, the average total number of
+@@ -941,7 +941,7 @@ average.
+ 
+ The final line in this section is a histogram of the major status
+ codes received in the replies from the server.  The major status code
+-is the ``hundreds''-digit of the full HTTP status code.  In the
++is the ``hundreds''\-digit of the full HTTP status code.  In the
+ example, all 29,997 replies had a major status code of 2.  It's a good
+ guess that all status codes were ``200 OK'' but the information in the
+ histogram is not detailed enough to allow distinguishing status codes
+@@ -1138,7 +1138,7 @@ rate.  A timeout as short as one second 
+ timeouts (5-10 seconds) are preferable.
+ 
+ It is important to keep in mind that timeouts do not guarantee that a
+-client can sustain a particular offered load---there are many other
++client can sustain a particular offered load\-\-\-there are many other
+ potential resource bottlenecks.  For example, in some cases the client
+ machine may simply run out of CPU time.  To ensure that a given test
+ really measured the server's capabilities and not the client's, it is
+@@ -1161,4 +1161,4 @@ prey to measuring client-performance ins
+ .PP
+ The user-interface definitely could be improved.  A simple workload
+ description language might be more suitable than the dozens of little
+-command-line options the tool has right now.
++command\-line options the tool has right now.

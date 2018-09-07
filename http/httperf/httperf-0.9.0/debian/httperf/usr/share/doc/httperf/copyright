@@ -1,0 +1,34 @@
+This package was debianized by Luca - De Whiskey's - De Vitis <luca@debian.org> on
+Sun, 22 Jul 2001 22:32:30 +0200. It is currently maintained by Alexander Reichle-Schmehl
+<tolimar@debian.org>.
+
+It was downloaded from ftp://ftp.hpl.hp.com/pub/httperf/
+
+Copyright Holder: Copyright (c) 2000 David Mosberger
+
+License:
+
+You are free to distribute this software under the terms of
+the GNU General Public License version 2 of the License, or
+(at your option) any later version.
+On Debian systems, the complete text of the GNU General Public
+License can be found in the file `/usr/share/common-licenses/GPL-2'.
+
+Additionally, the below exception was provided by Martin Arlitt, the
+upstream maintainer of httperf:
+
+"In addition, as a special exception, the copyright holders give
+permission to link the code of this work with the OpenSSL project's
+"OpenSSL" library (or with modified versions of it that use the same
+license as the "OpenSSL" library), and distribute linked combinations
+including the two.  You must obey the GNU General Public License in
+all respects for all of the code used other than "OpenSSL".  If you
+modify this file, you may extend this exception to your version of the
+file, but you are not obligated to do so.  If you do not wish to do
+so, delete this exception statement from your version."
+
+The complete thread of discussion regarding this issue is in the debian-legal
+list archives:
+
+http://lists.debian.org/debian-legal/2005/06/msg00396.html
+http://lists.debian.org/debian-legal/2005/07/msg00040.html

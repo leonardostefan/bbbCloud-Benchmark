@@ -1,0 +1,91 @@
+httperf (0.9.0-2) unstable; urgency=low
+
+  * Changing Maintainer Name
+  * Adding Vcs-Headers to debian/control
+  * Improve debian/copyright
+  * Add ${misc:Depends} to depends
+  * Add debian/README.source
+  * Bump standards to 3.8.3 (no further changes needed)
+
+ -- Alexander Reichle-Schmehl <tolimar@debian.org>  Mon, 18 Jan 2010 21:26:25 +0100
+
+httperf (0.9.0-1) unstable; urgency=low
+
+  * New maintainer (Closes: #483481)
+  * New upstream release
+  * Added watchfile
+  * Moved to quilt
+  * Transformed and updated  debian/patches-old/01_man_page_hyphens_patch.dpatch
+    to debian/patches/fix-manpage-formating
+
+ -- Alexander Schmehl <tolimar@debian.org>  Sat, 31 May 2008 17:17:52 +0200
+
+httperf (0.8-8) unstable; urgency=low
+
+  * Updated to Standards-Version 3.7.3 (no changes needed).
+  * Updated to debhelper compatibility level 5.
+  * Update maintainer email address.
+  * debian/control: Switch Homepage to be a proper control field.
+  * Make lintian happy with proper distclean call
+
+ -- Roberto C. Sanchez <roberto@connexer.com>  Sat,  5 Jan 2008 11:32:00 -0500
+
+httperf (0.8-7) unstable; urgency=low
+
+  * Migrated all differences between upstream and the Debian package from
+    the .diff.gz over to dpatch.
+  * Ensure that differences in config.status and config.guess are no longer
+    bloating the .diff.gz.
+
+ -- Roberto C. Sanchez <roberto@familiasanchez.net>  Sat, 11 Mar 2006 11:49:41 -0500
+
+httperf (0.8-6) unstable; urgency=low
+
+  * Updated the URL in the package description.  Thanks to "The Anarcat" for
+    pointing out the mistake. (Closes: #321264)
+
+ -- Roberto C. Sanchez <roberto@familiasanchez.net>  Fri,  5 Aug 2005 17:12:53 -0400
+
+httperf (0.8-5) unstable; urgency=low
+
+  * Fix incorrect bug closure in changelog of version 0.8-2.  Thanks to Anibal
+    Monsalve Salazar for pointing this out.
+
+ -- Roberto C. Sanchez <roberto@familiasanchez.net>  Mon, 18 Jul 2005 19:10:20 -0400
+
+httperf (0.8-4) unstable; urgency=low
+
+  * Updated to Standards-Version 3.6.2.
+  * Added license exception to copyright file.  The upstream maintainers and
+    developers have provided an exception to the GPL that allows linking
+    against OpenSSL.
+
+ -- Roberto C. Sanchez <roberto@familiasanchez.net>  Tue, 12 Jul 2005 15:20:26 -0400
+
+httperf (0.8-3) unstable; urgency=low
+
+  * New version to force upload of .orig.tar.gz.  This is a result of the
+    moving the package from non-US to main.
+
+ -- Roberto C. Sanchez <roberto@familiasanchez.net>  Tue,  7 Jun 2005 23:38:27 -0400
+
+httperf (0.8-2) unstable; urgency=low
+
+  * New maintainer.
+  * Moved from non-US to section web in main (Closes: #170060).
+  * Build against new libssl in Sid (Closes: #215277).
+  * Updated copyright file.
+  * Added patch to correct lintian warnings on the man page.
+  * Added a watch file.
+
+ -- Roberto C. Sanchez <roberto@familiasanchez.net>  Tue,  7 Jun 2005 19:48:47 -0400
+
+httperf (0.8-1) unstable; urgency=low
+
+  * Initial Release (CLoses: #85914).
+
+ -- Luca - De Whiskey's - De Vitis <luca@debian.org>  Sun, 22 Jul 2001 22:32:30 +0200
+
+Local variables:
+mode: debian-changelog
+End:

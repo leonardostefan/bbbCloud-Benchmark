@@ -1,0 +1,15 @@
+Package: httperf
+Version: 0.9.0-2
+Architecture: amd64
+Maintainer: Alexander Reichle-Schmehl <tolimar@debian.org>
+Installed-Size: 172
+Depends: libc6 (>= 2.7), libssl0.9.8 (>= 0.9.8m-1)
+Section: web
+Priority: optional
+Homepage: http://www.hpl.hp.com/research/linux/httperf/
+Description: An HTTP server performance tester
+ httperf is a tool to measure web server  performance. It speaks the HTTP
+ protocol both in its HTTP/1.0 and HTTP/1.1 flavors and offers a variety of
+ workload generators. While running, it keeps track of a number of performance
+ metrics that are summarized in the form  of  statistics  that  are printed  at
+ the end of a test run.
